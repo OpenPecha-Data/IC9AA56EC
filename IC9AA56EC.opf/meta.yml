@@ -1,0 +1,183 @@
+id: IC9AA56EC
+source: https://www2.hf.uio.no/polyglotta/index.php?page=library&bid=2
+source_file: null
+initial_creation_type: input
+imported: '2022-05-27T20:47:17.171753'
+last_modified: '2022-05-27T20:47:17.171767'
+parser: null
+source_metadata:
+  title: Grammar of Buddhist Chinese
+  language: zh
+  base:
+    f5443:
+      title: 遍 biàn
+      base_file: f5443.txt
+      order: 1
+    f8288:
+      title: 當 dāng
+      base_file: f8288.txt
+      order: 2
+    fFE7D:
+      title: 復 fù
+      base_file: fFE7D.txt
+      order: 3
+    fD94D:
+      title: 今 jīn
+      base_file: fD94D.txt
+      order: 4
+    f70C4:
+      title: 共 gòng
+      base_file: f70C4.txt
+      order: 5
+    f2F77:
+      title: 故 gù
+      base_file: f2F77.txt
+      order: 6
+    fCFC4:
+      title: 何 hé
+      base_file: fCFC4.txt
+      order: 7
+    f2870:
+      title: 和 hé
+      base_file: f2870.txt
+      order: 8
+    f545A:
+      title: 令 lìng
+      base_file: f545A.txt
+      order: 9
+    fC5A3:
+      title: 乃至 nǎi zhì
+      base_file: fC5A3.txt
+      order: 10
+    f99C2:
+      title: 如 rú
+      base_file: f99C2.txt
+      order: 11
+    f6063:
+      title: 若 ruò
+      base_file: f6063.txt
+      order: 12
+    fEBE5:
+      title: 若…若 ruò...ruò
+      base_file: fEBE5.txt
+      order: 13
+    f0986:
+      title: 若…者 ruò…zhě
+      base_file: f0986.txt
+      order: 14
+    fC409:
+      title: 隨 suí
+      base_file: fC409.txt
+      order: 15
+    f8B8F:
+      title: 是 shì
+      base_file: f8B8F.txt
+      order: 16
+    f892C:
+      title: 屬 shǔ
+      base_file: f892C.txt
+      order: 17
+    f00B7:
+      title: 所 suǒ
+      base_file: f00B7.txt
+      order: 18
+    f4E4A:
+      title: 爲 wéi
+      base_file: f4E4A.txt
+      order: 19
+    fB8BA:
+      title: 爲 wèi
+      base_file: fB8BA.txt
+      order: 20
+    fA834:
+      title: 已 yǐ
+      base_file: fA834.txt
+      order: 21
+    fE309:
+      title: 以 yǐ
+      base_file: fE309.txt
+      order: 22
+    f1D41:
+      title: 亦 yì
+      base_file: f1D41.txt
+      order: 23
+    f6DD0:
+      title: 異 yì
+      base_file: f6DD0.txt
+      order: 24
+    f12E0:
+      title: 因 yīn
+      base_file: f12E0.txt
+      order: 25
+    fABA8:
+      title: 應 yīng
+      base_file: fABA8.txt
+      order: 26
+    f1E48:
+      title: 由 yóu
+      base_file: f1E48.txt
+      order: 27
+    f4AA3:
+      title: 於 yú
+      base_file: f4AA3.txt
+      order: 28
+    f848D:
+      title: 於…中 yú zhōng
+      base_file: f848D.txt
+      order: 29
+    fF2DD:
+      title: 與 yǔ
+      base_file: fF2DD.txt
+      order: 30
+    fA51A:
+      title: 圓 yuán
+      base_file: fA51A.txt
+      order: 31
+    fAB0B:
+      title: 在 zài
+      base_file: fAB0B.txt
+      order: 32
+    fEFA2:
+      title: 在…中 zài zhōng
+      base_file: fEFA2.txt
+      order: 33
+    f02C7:
+      title: 雜 zá
+      base_file: f02C7.txt
+      order: 34
+    f84A9:
+      title: 增上 zēng shàng
+      base_file: f84A9.txt
+      order: 35
+    f1F3C:
+      title: 者 zhě
+      base_file: f1F3C.txt
+      order: 36
+    fF6B2:
+      title: 正 zhèng
+      base_file: fF6B2.txt
+      order: 37
+    f330A:
+      title: 之 zhī
+      base_file: f330A.txt
+      order: 38
+    f2DDE:
+      title: 中 zhōng
+      base_file: f2DDE.txt
+      order: 39
+    fCF84:
+      title: 諸 zhū
+      base_file: fCF84.txt
+      order: 40
+    f2356:
+      title: 性 xìng
+      base_file: f2356.txt
+      order: 41
+  chapter_to_tile: {}
+statistics: {}
+quality: {}
+copyright:
+  status: Unknown
+  notice: ''
+  info_url: null
+license: null

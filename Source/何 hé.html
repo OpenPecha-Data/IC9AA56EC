@@ -1,0 +1,439 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Bibliotheca Polyglotta</title>
+<link rel='stylesheet' type='text/css' href='css/bp.css'>
+<link rel='stylesheet' type='text/css' href='css/diac_doc.css'>
+
+<link rel='stylesheet' type='text/css' href='css/imageGallery.css'>
+<link rel='stylesheet' type='text/css' href='css/ss.css'>
+	      <link rel='stylesheet' type='text/css' href='css/tree_menu.css'>
+<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<!--  <script type="text/javascript" src="js/jqModal.js"></script>-->
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/tree_menu.js"></script>
+<!-- <script src="js/analytics_tracking.js" type="text/javascript"></script> -->
+
+
+<!-- <script type="text/javascript" src="js/popupDivhandling.js"></script> -->
+<!--  <script type="text/javascript" src="jquery-latest.js"></script>
+<script type="text/javascript" src="js/jquery-imagegallery.js"></script>-->
+</head>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//vrtx.uio.no/js/analytics/v2/analytics.js','ga');
+
+ga('create', 'UA-86407471-1', 'auto');
+ga(function(tracker) {
+
+	// Modifies sendHitTask to hit ipproxy instead of http://www.google-analytics.com directly
+	tracker.set('sendHitTask', function(model) {
+		payload = model.get('hitPayload');
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', '//w3prod-ipproxy.uio.no/collect' +'?' + payload, true);
+		xhr.send();
+	});
+		ga('send', 'pageview');
+});
+</script>
+<body><div class='banner'></div><!-- banner --><div class='uiologo'>
+<a href='http://www.hf.uio.no/'><img src='https://www2.hf.uio.no/polyglotta/hfe.png' border='0'></a></div><!-- uiologo --><div class='clear'></div>
+<div class='smule_tittel'>
+<div class='brodsmuleboks'>You are here: <a href='/polyglotta/index.php' accesskey='1'> BP HOME</a> >  <a href='/polyglotta/index.php?page=library&amp;bid=2' accesskey='1'>TLB</a> > <a href='/polyglotta/index.php
+	?page=volume&amp;vid=975' accesskey='1'>Grammar of Buddhist Chinese</a> > fulltext</div><div class='clear'></div>
+<div class='headline'>Grammar of Buddhist Chinese<div class='clear'></div></div><!-- headline -->
+</div><!-- smule_tittel -->
+<!--<div>-->
+
+<h2 class="trigger" id="tr_lang"><a  href="#">Choose languages</a></h2>
+<h2 class="trigger" id="tr_img"><a  href="#">Choose images, etc.</a></h2>
+
+
+<div id="toggle_container_lan">
+
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_lan.php" method="POST">
+
+<div style="float:left; width:auto; text-align:left; margin-left:20px;">
+<h5>Choose languages</h5>
+<ul>
+<input value="Choose all" type="button" onClick="markAll('tr')"><input value="Uncheck all" type="button" onClick="markNone('tr')">
+
+	<li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_975[4936]" value="4936" id="lancheckbox" checked >Chinese: Particle</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_975[4939]" value="4939" id="lancheckbox" checked >Chinese: Unihan/Other Classical Connotations</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_975[4937]" value="4937" id="lancheckbox" checked >Chinese: Examples</label></li><div style="clear:both"></div>
+<input type='submit' name='set_cookie' value='Save view'>
+<div style="clear:both"></div>
+
+</ul>
+<input type="hidden" name="vid" value="975">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+</div>
+
+<div id="toggle_container_img">
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_img.php" method="POST">
+
+<div style="float:left; width:auto; text-align: left;">
+<h5>Choose display</h5>
+<ul>
+		
+	<li> 
+		<input type='checkbox' name='bilder' checked="checked" > Enable images
+	</li>
+	<li> 
+	<input type='checkbox' onclick="onOffCheckbox();" name='fotnoter' checked="checked"> Enable footnotes
+	<div id="pff" style="display:block" >
+	<ul>
+	<li><input type='radio' name='fotnote_valg'  value='show_a' checked> Show all footnotes</li>
+	<li><input type='radio' name='fotnote_valg'  value='show_h'  > Minimize footnotes</li>
+	</ul>
+	</li>
+	
+	</div>
+	<div style="float:left; width:20em; text-align: left; margin-left:120px ">
+	<div style="clear:both"></div>
+	<input type='submit' name='set_cookie' value='Save view'>
+	<div style="clear:both"></div>
+	</div>
+	
+</ul>
+<input type="hidden" name="vid" value="975">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+	
+
+
+
+</div>
+</div>
+
+<div class='sok'><form name='Sok' id='FormBlock' action='/polyglotta/index.php' method='get'>
+<input type='hidden' name='page' value='search'>
+<input type='hidden' name='bid' value='2'>
+<input type='hidden' name='vid' value='975'>
+<div class='sokeboks'>
+<input name='sokefelt' id='sokeboks' type='text' size='30' value=''>
+<input type='submit' name='Sok' value='Search' id='nsubmit'>
+<div class='clear'></div><a class="diacbutton" id="diacbutton" href="#">Diacritica</a><a id="diac2button" class="diac2button"  href="#">Diacritica-help</a><a class="s2button" href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation:SearchHelp">Search-help</a><div class='diacritical' id='diacritical_sign'><div style="text-align: left; ">
+<table class = 'diacritica' width="200" border="1" cellpadding="1" cellspacing="1" id="diacritical">
+    <tbody>
+        <tr>
+            <td style="text-align: center; ">ā</td>
+            <td style="text-align: center; ">ī</td>
+            <td style="text-align: center; ">ū</td>
+            <td style="text-align: center; ">ṛ</td>
+            <td style="text-align: center; ">ṝ</td>
+            <td style="text-align: center; ">ḷ</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ḹ</td>
+            <td style="text-align: center; ">&rsquo;</td>
+            <td style="text-align: center; ">ṃ</td>
+            <td style="text-align: center; ">ḥ</td>
+            <td style="text-align: center; ">ṅ</td>
+            <td style="text-align: center; ">&ntilde;</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ṭ</td>
+            <td style="text-align: center; ">ḍ</td>
+            <td style="text-align: center; ">ṇ</td>
+            <td style="text-align: center; ">ṣ</td>
+            <td style="text-align: center; ">ś</td>
+            <td style="text-align: center; ">ź</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">&scaron;</td>
+            <td style="text-align: center; ">č</td>
+            <td style="text-align: center; ">ǰ</td>
+            <td style="text-align: center; ">&gamma;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+</div></div><!-- diacritical --><div id="ex3a" class="jqmDialog"><div>
+	<span style="font-size:12px;">Note on the transliteration:</span></div>
+<div>
+	<span style="font-size:12px;">The transliteration system of the BP/TLB is based on the Unicode/UTF-8 system. However, there may be difficulties with some of the letters &ndash; particularly on PC/Windows-based systems, but not so much on the Mac. We have chosen the most accepted older and traditional systems of transliteration against, e.g, Wylie for Tibetan, since with Unicode it is possible, in Sanskrit and Tibetan, etc., to represent one sound with one letter in almost all the cases (excepting Sanskrit and Tibetan aspirated letters, and Tibetan tsa, tsha, dza). We thus do not use the Wylie system which widely employs two letters for one sound (ng, ny, sh, zh etc.).</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">Important:</span></div>
+<div>
+	<span style="font-size:12px;">We ask you in particular to note the use of the &rsquo; apostrophe and not the &#39; representing the avagrāha in Sanskrit, and most important the &rsquo;a-chuṅ in Tibetan. On the Mac the &rsquo; is Alt-M.</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">If you cannot find the letters on your key-board, you may click on the link &quot;Diacritica&quot; to access it for your search.</span></div>
+</div><!-- diacritical_doc --><div class='clear'></div><select name='searchmode'><option selected value='phrase'>Search for exact phrase</option>
+<option  value='phraseregex'>Search for exact phrase (regex)</option>
+<option  value='word'>Search for every word in one record</option>
+<option  value='free'>Search for every word fragment in one record</option>
+</select>
+<select name='context'>
+<option ($_GET[context]=="a" ? "selected" : "") value="a"> Search in all libraries</option><option selected value="bTLB">Search in TLB</option><option selected value="v975">Search in Grammar of Buddhist Chinese</option></select><div class='clear'></div><a class='sbutton' href='/polyglotta/index.php?page=asearch&amp;bid=2&amp;vid=975'>Choose specific texts..</a><div class='clear'></div></div></form></div><!-- sok --><div class='clear'></div><!-- clear --><div id='dcr' class='divControlRead'><div class='venstrefulltekstfelt'><div class='bverknavn'><a href='/polyglotta/index.php?page=volume&amp;vid=975'>Grammar of Buddhist Chinese</a></div><table class="tlvl2">
+					<tr>
+						<td bgcolor="#ffffff"> &nbsp; &nbsp;
+						<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_7627.Verses41-58" border=0 hspace=2>
+						<a href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=975" class="ajax_tree0">Complete text</a>
+						</td>
+					</tr>
+				  </table><input type="hidden" name="tree_top_options" id="tree_top_options" value="78416.遍biàn|78417.當dāng|78418.復fù|78419.今jīn|78420.共gòng|78421.故gù|78422.何hé|78423.和hé|78424.令lìng|78425.乃至nǎizhì|78426.如rú|78427.若ruò|78428.若…若ruò...ruò|78429.若…者ruò…zhě|78430.隨suí|78431.是shì|78432.屬shǔ|78433.所suǒ|78434.爲wéi|78435.爲wèi|78436.已yǐ|78437.以yǐ|78438.亦yì|78439.異yì|78440.因yīn|78441.應yīng|78442.由yóu|78443.於yú|78444.於…中yúzhōng|78445.與yǔ|78446.圓yuán|78447.在zài|78448.在…中zàizhōng|78449.雜zá|78450.增上zēngshàng|78451.者zhě|78452.正zhèng|78453.之zhī|78454.中zhōng|78455.諸zhū|78456.性xìng|">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78416.遍biàn" border=0 hspace=2><a id="href_78416.遍biàn" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716145&level=1&cid=705840" class="ajax_tree0">遍 biàn
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78417.當dāng" border=0 hspace=2><a id="href_78417.當dāng" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716146&level=1&cid=705841" class="ajax_tree0">當 dāng
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78418.復fù" border=0 hspace=2><a id="href_78418.復fù" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716147&level=1&cid=705842" class="ajax_tree0">復 fù
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78419.今jīn" border=0 hspace=2><a id="href_78419.今jīn" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716148&level=1&cid=705843" class="ajax_tree0">今 jīn
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78420.共gòng" border=0 hspace=2><a id="href_78420.共gòng" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716149&level=1&cid=705844" class="ajax_tree0">共 gòng
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78421.故gù" border=0 hspace=2><a id="href_78421.故gù" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716150&level=1&cid=705845" class="ajax_tree0">故 gù
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78422.何hé" border=0 hspace=2><a id="href_78422.何hé" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716151&level=1&cid=705846" class="ajax_tree0">何 hé
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78423.和hé" border=0 hspace=2><a id="href_78423.和hé" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716152&level=1&cid=705847" class="ajax_tree0">和 hé
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78424.令lìng" border=0 hspace=2><a id="href_78424.令lìng" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716153&level=1&cid=705848" class="ajax_tree0">令 lìng
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78425.乃至nǎizhì" border=0 hspace=2><a id="href_78425.乃至nǎizhì" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716154&level=1&cid=705849" class="ajax_tree0">乃至 nǎi zhì
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78426.如rú" border=0 hspace=2><a id="href_78426.如rú" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716155&level=1&cid=705850" class="ajax_tree0">如 rú
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78427.若ruò" border=0 hspace=2><a id="href_78427.若ruò" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716156&level=1&cid=705851" class="ajax_tree0">若 ruò
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78428.若…若ruò...ruò" border=0 hspace=2><a id="href_78428.若…若ruò...ruò" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716157&level=1&cid=705852" class="ajax_tree0">若…若 ruò...ruò
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78429.若…者ruò…zhě" border=0 hspace=2><a id="href_78429.若…者ruò…zhě" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716158&level=1&cid=705853" class="ajax_tree0">若…者 ruò…zhě
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78430.隨suí" border=0 hspace=2><a id="href_78430.隨suí" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716159&level=1&cid=705854" class="ajax_tree0">隨 suí
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78431.是shì" border=0 hspace=2><a id="href_78431.是shì" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716160&level=1&cid=705855" class="ajax_tree0">是 shì
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78432.屬shǔ" border=0 hspace=2><a id="href_78432.屬shǔ" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716161&level=1&cid=705856" class="ajax_tree0">屬 shǔ
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78433.所suǒ" border=0 hspace=2><a id="href_78433.所suǒ" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716162&level=1&cid=705857" class="ajax_tree0">所 suǒ
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78434.爲wéi" border=0 hspace=2><a id="href_78434.爲wéi" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716163&level=1&cid=705858" class="ajax_tree0">爲 wéi
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78435.爲wèi" border=0 hspace=2><a id="href_78435.爲wèi" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716164&level=1&cid=705859" class="ajax_tree0">爲 wèi
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78436.已yǐ" border=0 hspace=2><a id="href_78436.已yǐ" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716165&level=1&cid=705860" class="ajax_tree0">已 yǐ
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78437.以yǐ" border=0 hspace=2><a id="href_78437.以yǐ" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716166&level=1&cid=705861" class="ajax_tree0">以 yǐ
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78438.亦yì" border=0 hspace=2><a id="href_78438.亦yì" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716167&level=1&cid=705862" class="ajax_tree0">亦 yì
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78439.異yì" border=0 hspace=2><a id="href_78439.異yì" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716168&level=1&cid=705863" class="ajax_tree0">異 yì
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78440.因yīn" border=0 hspace=2><a id="href_78440.因yīn" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716169&level=1&cid=705864" class="ajax_tree0">因 yīn
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78441.應yīng" border=0 hspace=2><a id="href_78441.應yīng" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716170&level=1&cid=705865" class="ajax_tree0">應 yīng
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78442.由yóu" border=0 hspace=2><a id="href_78442.由yóu" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716171&level=1&cid=705866" class="ajax_tree0">由 yóu
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78443.於yú" border=0 hspace=2><a id="href_78443.於yú" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716172&level=1&cid=705867" class="ajax_tree0">於 yú
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78444.於…中yúzhōng" border=0 hspace=2><a id="href_78444.於…中yúzhōng" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716173&level=1&cid=705868" class="ajax_tree0">於…中 yú zhōng
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78445.與yǔ" border=0 hspace=2><a id="href_78445.與yǔ" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716174&level=1&cid=705869" class="ajax_tree0">與 yǔ
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78446.圓yuán" border=0 hspace=2><a id="href_78446.圓yuán" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716175&level=1&cid=705870" class="ajax_tree0">圓 yuán
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78447.在zài" border=0 hspace=2><a id="href_78447.在zài" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716176&level=1&cid=705871" class="ajax_tree0">在 zài
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78448.在…中zàizhōng" border=0 hspace=2><a id="href_78448.在…中zàizhōng" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716177&level=1&cid=705872" class="ajax_tree0">在…中 zài zhōng
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78449.雜zá" border=0 hspace=2><a id="href_78449.雜zá" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716178&level=1&cid=705873" class="ajax_tree0">雜 zá
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78450.增上zēngshàng" border=0 hspace=2><a id="href_78450.增上zēngshàng" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716179&level=1&cid=705874" class="ajax_tree0">增上 zēng shàng
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78451.者zhě" border=0 hspace=2><a id="href_78451.者zhě" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716180&level=1&cid=705875" class="ajax_tree0">者 zhě
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78452.正zhèng" border=0 hspace=2><a id="href_78452.正zhèng" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716181&level=1&cid=705876" class="ajax_tree0">正 zhèng
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78453.之zhī" border=0 hspace=2><a id="href_78453.之zhī" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716182&level=1&cid=705877" class="ajax_tree0">之 zhī
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78454.中zhōng" border=0 hspace=2><a id="href_78454.中zhōng" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716183&level=1&cid=705878" class="ajax_tree0">中 zhōng
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78455.諸zhū" border=0 hspace=2><a id="href_78455.諸zhū" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716184&level=1&cid=705879" class="ajax_tree0">諸 zhū
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_78456.性xìng" border=0 hspace=2><a id="href_78456.性xìng" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=975&mid=1716185&level=1&cid=705880" class="ajax_tree0">性 xìng
+</td></tr></table>
+<script language=javascript>test('78422.何hé|')</script><div class='bverknavn'><a href='/polyglotta/index.php?page=library&amp;bid=2'>Back to library</a></div></div><!-- venstrefulltekstfelt --><div class="clear"></div><!-- clear --><div id="nav-menu"><ul>
+  		  <li  id="nav-1"><a class="tabValgt" href="/polyglotta/index.php?page=record&amp;view=record&amp;vid=975&amp;mid=1716151&amp;level=1">Sentence by sentence view</a></li>
+  		  <li  id="nav-2"><a  href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=975&amp;cid=705846&amp;mid=1716151&amp;level=1">Continuous text view</a></li>
+ 		<li  id="nav-3"><a  href="/polyglotta/admin/index.php?page=fulltext&amp;view=fulltext&amp;vid=975&amp;cid=705846&amp;mid=1716151&amp;level=1">View in admin</a></li>
+
+  		  </ul></div><div class='clear'></div><!-- clear -->			<script language="javascript" type="text/javascript">
+			var kilderef = '';
+			var tekstid = 0;
+			var tekstid_bilder = 0;
+			var filsti = '';
+			var thumbnail = '';
+			</script>
+		<div class='infofulltekstfelt'><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><div class='kilderef' id='6815211'></div><div class='clear'></div><span id='6815211bi' class='paragraph'>
+							何 hé&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "6815211";
+							kilderef = "BCG Particle  - Particle ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><div class='kilderef' id='6815337'></div><div class='clear'></div><span id='6815337bi' class='paragraph'>
+							何 hé:&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "6815337";
+							kilderef = "BCG Unihan/Other Classical Connotations  - Unihan/Other Classical Connotations ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><div class='kilderef' id='6815253'></div><div class='clear'></div><span id='6815253bi' class='paragraph'>
+							abl: 何以故。義不相(26)應故 arthāyogāt (真);&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "6815253";
+							kilderef = "BCG Examples  - Examples ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'></div><div class='textvar' style='width:32.333333333333%;'></div><div class='textvar' style='width:32.333333333333%;'></div></div><div class='clear'></div><div class="fontboks"><a onClick=onOffdiv('permlink') name="permlink" href="#permlink">Permanent link</a></div><div class='clear'></div><div class='perm_felt' id='permlink'>http://www2.hf.uio.no/common/apps/permlink/permlink.php?app=polyglotta&amp;context=ctext&amp;uid=be531139-25c2-11e7-ba66-0050569f23b2</div></div></div><!-- infofelt --></div><!-- divControl --><div class="clear"></div>
+<div style="clear:both"></div><div class="signatur"><div class="signatur_left">
+		<a href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation">Go to Wiki Documentation</a></br>Enhet: <a HREF=http://www.hf.uio.no>Det humanistiske fakultet</a> &nbsp; Utviklet av: <a href="http://www.hf.uio.no/tjenester/it">IT-seksjonen ved HF</a></div><!--signatur_left -->
+		<div class="signatur_right"><a href="/polyglotta/admin/index.php">Login</a></div>
+		<div style="clear:both"></div></div>
+</body></html><SCRIPT LANGUAGE="JAVASCRIPT">
+	
+	$("#tr_IA").click(function(){
+	    if ($("#toggle_container_IA").is(':hidden'))
+	    	$("#toggle_container_IA").show();
+	    else{
+	        $("#toggle_container_IA").hide();
+	    }
+	    return false;
+		});
+
+	$("#tr_lang").click(function(){
+	    if ($("#toggle_container_lan").is(':hidden'))
+	    	$("#toggle_container_lan").show();
+	    else{
+	        $("#toggle_container_lan").hide();
+	    }
+	    return false;
+	});
+
+	$("#tr_img").click(function(){
+	    if ($("#toggle_container_img").is(':hidden'))
+	    	$("#toggle_container_img").show();
+	    else{
+	        $("#toggle_container_img").hide();
+	    }
+	    return false;
+	});
+
+	$("#diac2button").click(function(){
+	   if ($("#ex3a").is(':hidden')){
+		   $("#ex3a").show();
+	       $("#diac2button").html("Hide&#32Diacritica-help");
+	   }else{
+	       $("#ex3a").hide();
+	       $("#diac2button").html("Diacritica-help");
+	   }
+	   return false;
+	});
+
+	$("#diacbutton").click(function(){
+	   if ($("#diacritical_sign").is(':hidden')){
+		   	$("#diacritical_sign").show();
+	      	$("#diacbutton").html("Hide&#32diacritica");
+	   }else{
+	        $("#diacritical_sign").hide();
+	        $("#diacbutton").html("Diacritica");
+	   }
+	   return false;
+    });
+
+	$('#toggle_container_IA').click(function(e) {
+	   e.stopPropagation();
+	});
+
+	$('#toggle_container_lan').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#toggle_container_img').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#ex3a').click(function(e) {
+	    e.stopPropagation();
+	});
+
+	$('#diacritical_sign').click(function(e) {
+        e.stopPropagation();
+    });
+
+	//Kode for å sette inn diakritiske tegn
+	$('#diacritical > tbody > tr > td').click(function() {
+	  	//alert('red');
+		$("#sokeboks").val($("#sokeboks").val() + $(this).text());
+	});
+
+	$('.diac2button').text(($('.diacbutton').text() == 'Diacritica-help') ? 'Hide Diacritica-help' : 'Diacritica-help');
+	
+	//Lukker alle åpnede pop'uper ved klikk på siden
+	$(document).click(function() {
+		$('#toggle_container_IA').hide();
+	    
+        $('#toggle_container_lan').hide();
+    
+        $('#toggle_container_img').hide();
+   
+   		$('#diacritical_sign').hide();
+   		$("#diacbutton").html("Diacritica");
+   
+       	$('#ex3a').hide();
+       	$("#diac2button").html("Diacritica-help");
+   });
+	</SCRIPT>
